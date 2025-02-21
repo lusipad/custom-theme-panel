@@ -1,12 +1,12 @@
 {
-    "name": "custom-theme-panel",
+    "name": "cnc-panel",
     "displayName": "机床控制面板",
     "description": "一个用于机床控制的可视化面板界面",
     "version": "0.0.1",
-    "publisher": "vscode-extensions",
+    "publisher": "lusipad",
     "repository": {
         "type": "git",
-        "url": "https://github.com/vscode-extensions/custom-theme-panel.git"
+        "url": "https://github.com/lusipad/custom-theme-panel.git"
     },
     "engines": {
         "vscode": "^1.85.0"
@@ -21,7 +21,7 @@
     "contributes": {
         "commands": [
             {
-                "command": "custom-theme-panel.openPanel",
+                "command": "cnc-panel.openPanel",
                 "title": "打开机床控制面板"
             }
         ]

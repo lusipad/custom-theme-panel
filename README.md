@@ -16,7 +16,7 @@
 
 1. 打开VSCode
 2. 按下`Ctrl+P`打开命令面板
-3. 输入`ext install custom-theme-panel`
+3. 输入`ext install cnc-panel`
 4. 点击安装
 
 ## 使用方法
@@ -52,7 +52,7 @@
 
 ## 问题反馈
 
-如有问题或建议，请在GitHub仓库提交Issue。
+如有问题或建议，请在[GitHub仓库](https://github.com/lusipad/custom-theme-panel)提交Issue。
 
 ## 许可证
 
