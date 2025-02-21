@@ -69,7 +69,7 @@ export class CustomPanel {
                     }
                     .container {
                         padding: 15px;
-                        padding-top: 45px;
+                        padding-top: 55px;
                     }
                     .tabs {
                         position: fixed;
@@ -207,7 +207,6 @@ export class CustomPanel {
                         margin: 20px 0;
                         box-shadow: 0 1px 3px rgba(0,0,0,0.1);
                         position: relative;
-                        z-index: 1;
                     }
                     .slider-container input[type="range"] {
                         width: 100%;
@@ -215,8 +214,18 @@ export class CustomPanel {
                         -webkit-appearance: none;
                         background: linear-gradient(to right, #4CAF50 0%, #4CAF50 50%, #666 50%, #666 100%);
                         border-radius: 10px;
-                        margin: 10px 0;
+                        margin: 25px 0 10px 0;
                         cursor: pointer;
+                        position: relative;
+                        z-index: 1;
+                    }
+                    .slider-title {
+                        font-size: 14px;
+                        color: var(--vscode-foreground);
+                        text-align: center;
+                        margin-bottom: 5px;
+                        position: relative;
+                        z-index: 2;
                     }
                     .slider-container input[type="range"]::-webkit-slider-thumb {
                         -webkit-appearance: none;
@@ -314,6 +323,7 @@ export class CustomPanel {
                 <div class="tabs">
                     <button class="tab active" onclick="showTab(event, 'control')">基础控制</button>
                     <button class="tab" onclick="showTab(event, 'settings')">轴设置</button>
+                    <button class="tab" onclick="showTab(event, 'monitor')">状态监控</button>
                 </div>
                 
                 <div class="container">

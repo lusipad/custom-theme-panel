@@ -1,36 +1,47 @@
 {
-  "name": "custom-theme-panel",
-  "displayName": "Custom Theme Panel",
-  "description": "VSCode自定义主题面板",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.85.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onStartupFinished"
-  ],
-  "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "custom-theme-panel.openPanel",
-        "title": "打开自定义主题面板"
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile",
-    "test": "node ./out/test/runTest.js"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.85.0",
-    "@types/node": "18.x",
-    "typescript": "^5.3.3"
-  }
+    "name": "custom-theme-panel",
+    "displayName": "机床控制面板",
+    "description": "一个用于机床控制的可视化面板界面",
+    "version": "0.0.1",
+    "publisher": "vscode-extensions",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vscode-extensions/custom-theme-panel.git"
+    },
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "custom-theme-panel.openPanel",
+                "title": "打开机床控制面板"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.85.0",
+        "@types/node": "18.x",
+        "typescript": "^5.3.3"
+    },
+    "keywords": [
+        "机床",
+        "控制面板",
+        "可视化"
+    ],
+    "license": "MIT"
 }
